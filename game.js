@@ -14,7 +14,6 @@ $(document).keydown(function(){
   }
 });
 
-
 $(".btn").click(function(){
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
@@ -36,6 +35,7 @@ function checkAnswer(currentLevel) {
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Any Key to Restart");
 
+
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
@@ -50,7 +50,7 @@ function nextSequence(){
   level++;
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor((Math.random()*3)+1);
-  var randomChosenColour =buttonColours[randomNumber]
+  var randomChosenColour =buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
   $("#" +randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);

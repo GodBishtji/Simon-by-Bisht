@@ -63,3 +63,11 @@ ol{
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+footer {
+  margin-top: 1%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
